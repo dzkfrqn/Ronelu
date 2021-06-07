@@ -33,4 +33,14 @@
     <string name="_21_00_istirahat">21:00 - Istirahat</string>
     <string name="medicine">medicine</string>
     <string name="takePic">take picture</string>
+    <string name="Clickhere">*Click here to choose Platform</string>
+    <string name="medicName">name :</string>
+    <string name="medicCompos">composition:</string>
+    <string name="medicDesc">Description :</string>
+    <string name="MedicDosage">Dosage :</string>
+    <string name="medicHow">how to use :</string>
+    <string name="medicSide">Side Effects :</string>
+    <string name="medicWarning">Warning :</string>
+    <string name="medicContra">contraindication :</string>
+
 </resources>

@@ -3,6 +3,7 @@ package com.example.ronelo
 import com.example.ronelo.model.ModelNews
 import com.example.ronelo.model.ModelNurse
 import com.example.ronelo.model.ModelPatient
+import com.example.ronelo.model.ResultMedicineModel
 
 object Dummy {
     fun dataNurse(): List<ModelNurse> {
@@ -77,7 +78,7 @@ object Dummy {
         news.add(
             ModelNews(
                 "https://rm.id/config/thumbnail.php?file=../images/berita/med/stok-vaksin-covid19-menipis-perketat-protokol-kesehatan-prioritaskan-vaksinasi-lansia_73498.jpeg&width=739&height=385",
-                "Daftar Vaksin Sekaran!"
+                "Daftar Vaksin Sekarang!"
             )
         )
         news.add(
@@ -104,5 +105,22 @@ object Dummy {
             )
         )
         return patient
+    }
+
+    fun dataMedicine(): List<ResultMedicineModel>{
+        val medicine = ArrayList<ResultMedicineModel>()
+
+        medicine.add(
+            ResultMedicineModel(
+                "AMLODIPINE",
+                "Tiap tablet mengandung Amlodipine 5 mg",
+                "Pasien yang hipersensitif terhadap amlodipine dan golongan dihydropirydine lainnya.",
+                "AMLODIPINE merupakan obat antihipertensi golongan Calcium Channel Blockers (CCB). Obat ini bekerja dengan cara menghambat kalsium masuk ke dalam sel sehingga salah satu efeknya adalah menyebabkan vasodilatasi, memperlambat laju jantung, dan menurunkan kontraktilitas miokard sehingga menurunkan tekanan darah. Dalam penggunaan obat ini harus SESUAI DENGAN PETUNJUK DOKTER.",
+                "PENGGUNAAN OBAT INI HARUS SESUAI DENGAN PETUNJUK DOKTER.\nDosis awal 5 mg per hari. Maksimal 10 mg per hari.\nTitrasi dosis dilakukan tiap 7-14 hari.",
+                "Dikonsumsi sebelum atau sesudah makan. ",
+                "Pemakaian obat umumnya memiliki efek samping tertentu dan sesuai dengan masing-masing individu. Jika terjadi efek samping yang berlebih dan berbahaya, harap konsultasikan kepada tenaga medis.\nEfek samping yang mungkin terjadi dalam penggunaan obat adalah: \nUmum yang sering timbul: edema dan sakit kepala.",
+                "HARUS DENGAN RESEP DOKTER. \nPengawasan ketat pada pasien gangguan fungsi hati dan gagal jantung kongestif."
+            )
+        )
     }
 }

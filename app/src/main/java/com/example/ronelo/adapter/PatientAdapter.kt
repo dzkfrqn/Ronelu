@@ -1,5 +1,6 @@
 package com.example.ronelo.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -19,6 +20,7 @@ class PatientAdapter : RecyclerView.Adapter<PatientAdapter.ViewHolder>() {
 
     inner class ViewHolder(private val binding: ActivityPatientBinding) :
         RecyclerView.ViewHolder(binding.root) {
+        @SuppressLint("StringFormatInvalid")
         fun bind(modelPatient: ModelPatient) {
             Glide.with(itemView.context)
                 .load(modelPatient.img)

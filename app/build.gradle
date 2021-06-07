@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.ronelo"
-        minSdkVersion 19
+        minSdkVersion 22
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -66,4 +66,11 @@ dependencies {
 
     implementation 'androidx.recyclerview:recyclerview:1.2.0'
     implementation 'androidx.cardview:cardview:1.0.0'
+
+    //DEXTER
+    implementation 'com.karumi:dexter:6.2.2'
+    //COIL
+    implementation "io.coil-kt:coil:1.1.1"
+
+
 }
