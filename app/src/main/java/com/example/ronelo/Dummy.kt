@@ -107,7 +107,7 @@ object Dummy {
         return patient
     }
 
-    fun dataMedicine(): List<ResultMedicineModel>{
+    fun dataMedicine() {
         val medicine = ArrayList<ResultMedicineModel>()
 
         medicine.add(
@@ -121,6 +121,5 @@ object Dummy {
                 "Pemakaian obat umumnya memiliki efek samping tertentu dan sesuai dengan masing-masing individu. Jika terjadi efek samping yang berlebih dan berbahaya, harap konsultasikan kepada tenaga medis.\nEfek samping yang mungkin terjadi dalam penggunaan obat adalah: \nUmum yang sering timbul: edema dan sakit kepala.",
                 "HARUS DENGAN RESEP DOKTER. \nPengawasan ketat pada pasien gangguan fungsi hati dan gagal jantung kongestif."
             )
-        )
-    }
+        )}
 }

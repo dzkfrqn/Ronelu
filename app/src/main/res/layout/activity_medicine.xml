@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".MedicineActivity"
-    android:background="@drawable/background_basic">
+    android:background="@drawable/mantau_watermark">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

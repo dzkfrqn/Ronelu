@@ -9,14 +9,14 @@
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
-    android:background="@drawable/background_basic"
+    android:background="@drawable/mantau_watermark"
     tools:context=".splash.SplashScreenActivity">
 
     <ImageView
         android:id="@+id/iv_splash"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:background="@drawable/logo"
+        android:background="@drawable/mantau_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

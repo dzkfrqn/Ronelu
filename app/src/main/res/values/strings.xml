@@ -1,13 +1,13 @@
 <resources>
-    <string name="app_name">Ronelo</string>
+    <string name="app_name">Mantau</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="welcome">"Welcome !"</string>
     <string name="todo1">TODO</string>
     <string name="nurse">Nurse Nearby</string>
     <string name="todo2">TODO</string>
     <string name="todo3">TODO</string>
-    <string name="ronelo_medicine">Ronelo Medicine</string>
-    <string name="ronelo_patient">Ronelo Patient</string>
+    <string name="Mantau_medicine">Mantau Medicine</string>
+    <string name="Mantau_patient">Mantau Patient</string>
     <string name="todo4">TODO4</string>
     <string name="string_todo4" />
     <string name="todo5">TODO</string>

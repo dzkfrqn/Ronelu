@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ResultMedicineActivity">
+    tools:context=".ResultMedicineActivity"
+    android:background="@drawable/mantau_watermark">
 
    <androidx.cardview.widget.CardView
        android:layout_width="match_parent"

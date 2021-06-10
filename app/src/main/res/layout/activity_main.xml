@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/background_basic">
+    android:background="@drawable/mantau_watermark">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Hai, \nMatin Shelby welcome to Ronelo,\n I hope you enjoy with our application"
+            android:text="Hai, \nMatin Shelby welcome to Mantau,\n I hope you enjoy with our application"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -99,7 +99,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
                 android:layout_marginBottom="8dp"
-                android:text="@string/ronelo_medicine"
+                android:text="@string/Mantau_medicine"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/button_camera"
                 app:layout_constraintStart_toStartOf="parent"
@@ -111,7 +111,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="105dp"
                 android:layout_marginBottom="8dp"
-                android:text="@string/ronelo_patient"
+                android:text="@string/Mantau_patient"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/button_take_care"
                 app:layout_constraintEnd_toEndOf="parent"

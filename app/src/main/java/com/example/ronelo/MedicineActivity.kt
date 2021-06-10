@@ -230,14 +230,14 @@ class MedicineActivity : AppCompatActivity(), UploadRequestBody.UploadCallback {
         if (resultCode == Activity.RESULT_OK) {
 
             when (requestCode) {
-//                REQ_CODE_CAMERA -> {
-//                    val bitmap = data?.extras?.get("data") as Bitmap
-//                    binding.ivPic
-//                        .load(bitmap) {
-//                            crossfade(true)
-//                            crossfade(1000)
-//                        }
-//                }
+                REQ_CODE_CAMERA -> {
+                    val bitmap = data?.extras?.get("data") as Bitmap
+                    binding.ivPic
+                        .load(bitmap) {
+                            crossfade(true)
+                            crossfade(1000)
+                        }
+                }
                 REQ_CODE_GALLERY -> {
                     selectedImageFromGallery = data?.data!!
                     binding.ivPic
@@ -264,55 +264,55 @@ class MedicineActivity : AppCompatActivity(), UploadRequestBody.UploadCallback {
 
             binding.progBar.progress = 0
             val body = UploadRequestBody(file, "image", this)
-
-            Api().getDataPost(
-                MultipartBody.Part.createFormData("image", file.name, body),
-                "json".toRequestBody("multipart/form-data".toMediaTypeOrNull()),
-                "json".toRequestBody("multipart/form-data".toMediaTypeOrNull()),
-                "json".toRequestBody("multipart/form-data".toMediaTypeOrNull()),
-                "json".toRequestBody("multipart/form-data".toMediaTypeOrNull()),
-                "json".toRequestBody("multipart/form-data".toMediaTypeOrNull()),
-                "json".toRequestBody("multipart/form-data".toMediaTypeOrNull()),
-                "json".toRequestBody("multipart/form-data".toMediaTypeOrNull()),
-                "json".toRequestBody("multipart/form-data".toMediaTypeOrNull()),
-            ).enqueue(object : Callback<CreatePostResponse> {
-                override fun onResponse(
-                    call: Call<CreatePostResponse>,
-                    response: Response<CreatePostResponse>
-                ) {
-                    response.body()?.let {
-                        binding.btnCamera.snackbar(it.message)
-                        Log.d("Gallery", response.body().toString())
-                        Log.d("Gallery", response.code().toString())
-                        Log.d("Gallery", response.message())
-                        binding.progBar.progress = 100
-
-                        val diseasePrediction = response.body()!!.result.prediction
-                        if (response.code() == 200) {
-                            val intent =
-                                Intent(
-                                    this@MedicineActivity,
-                                    ResultMedicineActivity::class.java
-                                ).apply {
-                                    putExtra(ResultMedicineActivity.disease, diseasePrediction)
-                                    putExtra(
-                                        ResultMedicineActivity.image,
-                                        selectedImageUri.toString()
-                                    )
-                                    putExtra(ResultMedicineActivity.file, file.toString())
-                                }
-                            startActivity(intent)
-                        }
-                    }
-                }
-
-                override fun onFailure(call: Call<CreatePostResponse>, t: Throwable) {
-                    binding.btnCamera.setOnClickListener {
-                        Toast.makeText(this, "")
-                    }
-                    binding.progBar.progress = 0
-                }
-            })
+//
+//            Api().getDataPost(
+//                MultipartBody.Part.createFormData("image", file.name, body),
+//                "json".toRequestBody("multipart/form-data".toMediaTypeOrNull()),
+//                "json".toRequestBody("multipart/form-data".toMediaTypeOrNull()),
+//                "json".toRequestBody("multipart/form-data".toMediaTypeOrNull()),
+//                "json".toRequestBody("multipart/form-data".toMediaTypeOrNull()),
+//                "json".toRequestBody("multipart/form-data".toMediaTypeOrNull()),
+//                "json".toRequestBody("multipart/form-data".toMediaTypeOrNull()),
+//                "json".toRequestBody("multipart/form-data".toMediaTypeOrNull()),
+//                "json".toRequestBody("multipart/form-data".toMediaTypeOrNull()),
+//            ).enqueue(object : Callback<CreatePostResponse> {
+//                override fun onResponse(
+//                    call: Call<CreatePostResponse>,
+//                    response: Response<CreatePostResponse>
+//                ) {
+//                    response.body()?.let {
+//                        binding.btnCamera.snackbar(it.message)
+//                        Log.d("Gallery", response.body().toString())
+//                        Log.d("Gallery", response.code().toString())
+//                        Log.d("Gallery", response.message())
+//                        binding.progBar.progress = 100
+//
+//                        val diseasePrediction = response.body()!!.result.prediction
+//                        if (response.code() == 200) {
+//                            val intent =
+//                                Intent(
+//                                    this@MedicineActivity,
+//                                    ResultMedicineActivity::class.java
+//                                ).apply {
+//                                    putExtra(ResultMedicineActivity.disease, diseasePrediction)
+//                                    putExtra(
+//                                        ResultMedicineActivity.image,
+//                                        selectedImageUri.toString()
+//                                    )
+//                                    putExtra(ResultMedicineActivity.file, file.toString())
+//                                }
+//                            startActivity(intent)
+//                        }
+//                    }
+//                }
+//
+//                override fun onFailure(call: Call<CreatePostResponse>, t: Throwable) {
+//                    binding.btnCamera.setOnClickListener {
+//                        Toast.makeText(this, "")
+//                    }
+//                    binding.progBar.progress = 0
+//                }
+//            })
         }
 
 //    private fun getUploadImage(){
